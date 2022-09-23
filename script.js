@@ -1,7 +1,12 @@
 var jmlangkot = 10;
-var noangkot = 1;
+var angkotberoperasi = 6;
 
-while(noangkot <= jmlangkot) {
-    console.log('angkot no. ' + noangkot + ' beroperasi dengan baik');
-    noangkot++;
+for (var noangkot = 1; noangkot <= jmlangkot; noangkot++) {
+  if (noangkot <= 6) {
+    console.log("angkot no " + noangkot + " beroperasi dengan baik.");
+  } else if (noangkot === 8 || noangkot === 10) {
+    console.log("angkot no. " + noangkot + " sedang lembur.");
+  } else {
+    console.log("angkot no. " + noangkot + " sedang tidak beroperasi.");
+  }
 }
